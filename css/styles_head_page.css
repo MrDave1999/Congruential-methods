@@ -1,0 +1,20 @@
+h1#title_head 
+{
+	display:inline-block;
+	width:100%;
+	height:55px;
+	border-left:5px solid green;
+}
+
+p#text_head
+{
+	display:inline-block;
+	font-size:20px;
+	padding-left:350px;
+}
+
+img#logo_head 
+{
+	width:50px;
+	height:40px; 
+}

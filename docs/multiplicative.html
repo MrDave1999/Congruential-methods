@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Congruential methods</title>
+	<link rel="shortcut icon" href="../img/icon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="../css/styles_menu.css">
+	<link rel="stylesheet" href="../css/styles_head_page.css">
+	<link rel="stylesheet" href="../css/styles_general.css">
+	<script src="../js/generators.js"></script>
+	<script src="../js/validations.js"></script>
+	<script src="../js/start_validation.js"></script>
+</head>
+
+<body>
+	<h1 id="title_head">
+		Congruential methods
+		<p id="text_head">Calculator on this site is for learning</p>
+		<img id="logo_head" src="../img/logo_calculator.png">
+	</h1>
+	<div id="menu">
+		<a href="../index.html" target="_self">Home</a>
+		<a href="additive.html" target="_self">Additive</a>
+		<a href="multiplicative.html" target="_self">Multiplicative</a>
+		<a href="mixed.html" target="_self">Mixed</a>
+	</div>
+	
+	<h2>Multiplicative method</h2>
+	<p>Is a type of linear congruential generator for generating pseudorandom numbers in a specific range.
+	This method can be defined as: </p>
+	<div id="formula_multi">
+		<div style="margin-left:200px;"><img src="../img/multi.png"></div>
+		<p style="margin-left:10px;">where,</p>
+		<ul>
+			<li><strong>X</strong>, the sequence of pseudo-random numbers</li>
+			<li><strong>m</strong> ( > 0), the modulus</li>
+			<li><strong>a</strong> (0, m), the multiplier</li>
+			<li><strong>X0</strong> [0, m), initial value of the sequence – termed as seed</li>
+		</ul>
+		<p style="margin-left:10px;">m, a, and X0 should be chosen appropriately to get a period almost equal to m.</p>
+	</div>
+	<h2>Calculator</h2>
+	<div>
+		<div id="inputs" style="float:left;">
+			<label for="pseudo-random">Enter the number of pseudo-random numbers to generate:</label><br>
+			<input type="text" id="pseudo-random" name="pseudo-random" placeholder="15"><br><br>
+			
+			<label for="multiplier">Enter the value of <strong>a</strong> (multiplier):</label>
+			<input type="text" id="multiplier" name="multiplier" placeholder="5"><br><br>
+		
+			<label for="seed">Enter the value of <strong>Xo</strong> (seed):</label>
+			<input type="text" id="seed" name="seed" placeholder="7"><br><br>
+		
+			<label for="module">Enter the value of <strong>m</strong> (module):</label>
+			<input type="text" id="module" name="module" placeholder="64"><br><br>
+			<button type="button" onclick="initial(0)">Calculate values</button>
+			<button id="reset" type="button" onclick="resetCampus()">Reset</button>
+		</div>
+		<div style="float:left;">
+			<textarea id="result" name="result" disabled></textarea>
+		</div>
+		
+	</div>
+</body>
+
+
+</html>

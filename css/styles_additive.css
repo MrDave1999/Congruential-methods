@@ -1,0 +1,13 @@
+textarea#sequence
+{
+	width:400px;
+	height:100px;
+	resize:none;
+	overflow-y:scroll;
+}
+
+button#button_additive
+{
+	margin-left:50px;
+	margin-top:10px;
+}

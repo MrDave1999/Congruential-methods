@@ -1,0 +1,28 @@
+div#menu
+{ 
+	background-color: #8A8987;
+	height:32px;
+	padding-top:11px;
+	text-align:center;
+}
+		
+#menu a
+{
+	color:white;
+	padding:10px;
+}
+		
+#menu a:link
+{
+	text-decoration:none;
+}
+		
+#menu a:hover
+{
+	background-color:black;
+}
+		
+#menu a:active
+{
+	background-color:red;
+}

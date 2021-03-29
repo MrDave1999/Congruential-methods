@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Congruential methods</title>
+	<link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/styles_menu.css">
+	<link rel="stylesheet" href="css/styles_head_page.css">
+	<link rel="stylesheet" href="css/styles_general.css">
+	<link rel="stylesheet" href="css/styles_introduction.css">
+	<base target="_blank">
+</head>
+
+<body>
+
+	<h1 id="title_head">
+		Congruential methods
+		<p id="text_head">Calculator on this site is for learning</p>
+		<img id="logo_head" src="img/logo_calculator.png">
+	</h1>
+	<div id="menu">
+		<a href="index.html" target="_self">Home</a>
+		<a href="docs/additive.html" target="_self">Additive</a>
+		<a href="docs/multiplicative.html" target="_self">Multiplicative</a>
+		<a href="docs/mixed.html" target="_self">Mixed</a>
+	</div>
+	
+	<h2>Introduction</h2>
+	<div>
+		<div id="block1_intro">
+			<p> Is an algorithm that yields a sequence of pseudo-randomized numbers calculated with a discontinuous piecewise linear equation. The method represents one of the oldest and best-known pseudorandom number generator algorithms.
+				The theory behind them is relatively easy to understand, and they are easily implemented and fast, especially on computer hardware which can provide modular arithmetic by storage-bit truncation.<br><br>
+				The generator is defined by recurrence relation:
+				<img src="img/f1.png"><br>
+				where X is the sequence of pseudorandom values, and
+				<div style="text-align:center">
+					<img src="img/f2.png">
+				</div>
+			</p>
+		</div>
+		<div id="block2_intro">
+			<a href="img/lcg.png"><img id="img_lcg" src="img/lcg.png"></a>
+			<p> Two modulo-9 LCGs show how different parameters lead to different cycle lengths. Each row shows the state evolving until it repeats. The top row shows a generator with m = 9, a = 2, c = 0, and a seed of 1, which produces a cycle of length 6. The second row is the same generator with a seed of 3, which produces a cycle of length 2. Using a = 4 and c = 1 (bottom row) gives a cycle length of 9 with any seed in [0, 8].</p>
+		</div>
+	</div>
+	<h2 style="clear:left;">Video</h2>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/BYR5sbJHqsU"></iframe>
+	<h2>Sources</h2>
+	<ul>
+		<li><a href="https://en.wikipedia.org/wiki/Linear_congruential_generator">https://en.wikipedia.org/wiki/Linear_congruential_generator</a></li>
+		<li><a href="https://www.ams.org/journals/mcom/1962-16-077/S0025-5718-1962-0136046-5/S0025-5718-1962-0136046-5.pdf">https://www.ams.org/journals/mcom/1962-16-077/S0025-5718-1962-0136046-5/S0025-5718-1962-0136046-5.pdf</a></li>
+	</ul>
+</body>
+</html>

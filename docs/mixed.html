@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Congruential methods</title>
+	<link rel="shortcut icon" href="../img/icon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="../css/styles_menu.css">
+	<link rel="stylesheet" href="../css/styles_head_page.css">
+	<link rel="stylesheet" href="../css/styles_general.css">
+	<script src="../js/generators.js"></script>
+	<script src="../js/validations.js"></script>
+	<script src="../js/start_validation.js"></script>
+</head>
+
+<body>
+	<h1 id="title_head">
+		Congruential methods
+		<p id="text_head">Calculator on this site is for learning</p>
+		<img id="logo_head" src="../img/logo_calculator.png">
+	</h1>
+	<div id="menu">
+		<a href="../index.html" target="_self">Home</a>
+		<a href="additive.html" target="_self">Additive</a>
+		<a href="multiplicative.html" target="_self">Multiplicative</a>
+		<a href="mixed.html" target="_self">Mixed</a>
+	</div>
+	<h2>Mixed method</h2>
+	<p>Mixed congruential generators generate a sequence of pseudo-random numbers in which the next pseudo-random number is determined from the last generated number, 
+	that is, the pseudo-random number Xn + 1 is derived from the pseudo-random number Xn.
+	<div id="formula_multi">
+		<div style="margin-left:200px;"><img src="../img/f1.png"></div>
+		<p style="margin-left:10px;">The recurrence ratio for the generator congruential mixed is <strong>Xn + 1 = (a Xn + c) mod m</strong>, where:</p>
+		<ul>
+			<li>Xo = seed.</li>
+			<li>a = multiplier.</li>
+			<li>c = additive constant.</li>
+			<li>m = module (m > Xo, a, c)</li>
+			<li>Xo, a, c > 0</li>
+		</ul>
+	</div>
+	<h2>Calculator</h2>
+	<div>
+		<div id="inputs" style="float:left;">
+			<label for="pseudo-random">Enter the number of pseudo-random numbers to generate:</label><br>
+			<input type="text" id="pseudo-random" name="pseudo-random" placeholder="8"><br><br>
+			
+			<label for="multiplier">Enter the value of <strong>a</strong> (multiplier):</label>
+			<input type="text" id="multiplier" name="multiplier" placeholder="19"><br><br>
+		
+			<label for="seed">Enter the value of <strong>Xo</strong> (seed):</label>
+			<input type="text" id="seed" name="seed" placeholder="37"><br><br>
+		
+			<label for="module">Enter the value of <strong>m</strong> (module):</label>
+			<input type="text" id="module" name="module" placeholder="100"><br><br>
+			
+			<label for="constant">Enter the value of <strong>c</strong> (constant):</label>
+			<input type="text" id="constant" name="constant" placeholder="33"><br><br>
+			<button type="button" onclick="initial(1)">Calculate values</button>
+			<button id="reset" type="button" onclick="resetCampus()">Reset</button>
+		</div>
+		<div style="float:left;">
+			<textarea id="result" name="result" disabled></textarea>
+		</div>
+	</div>
+	
+</body>
+</html>

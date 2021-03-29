@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Congruential methods</title>
+	<link rel="shortcut icon" href="../img/icon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="../css/styles_menu.css">
+	<link rel="stylesheet" href="../css/styles_head_page.css">
+	<link rel="stylesheet" href="../css/styles_general.css">
+	<link rel="stylesheet" href="../css/styles_additive.css">
+	<script src="../js/generators.js"></script>
+	<script src="../js/validations.js"></script>
+	<script src="../js/start_validation.js"></script>
+</head>
+
+<body>
+	<h1 id="title_head">
+		Congruential methods
+		<p id="text_head">Calculator on this site is for learning</p>
+		<img id="logo_head" src="../img/logo_calculator.png">
+	</h1>
+	<div id="menu">
+		<a href="../index.html" target="_self">Home</a>
+		<a href="additive.html" target="_self">Additive</a>
+		<a href="multiplicative.html" target="_self">Multiplicative</a>
+		<a href="mixed.html" target="_self">Mixed</a>
+	</div>
+	<h2>Additive method</h2>
+	<p>Calculates a sequence of pseudo-random numbers using the relation <strong>Xn + 1 = Xn + Xn-k (mod M).</strong> To use this method k initial values ​​are needed, where k is an integer. 
+		The statistical properties of the sequence use an improvement as it is increased. This is the only method that produces periods greater than M.
+	</p>
+	<h2>How does it work</h2>
+	<p>First of all, this algorithm requires a previous sequence of n integers <strong>x1, x2, x3… .xn</strong> to generate a new sequence of integers starting at <strong>xn + 1, xn + 2, xn + 3…</strong></p>
+	<p>Its recursive equation is:</p>
+	<img style="margin-left:50px;" src="../img/additive.png">
+	
+	<h2>Calculator</h2>
+	<div>
+		<div id="inputs" style="float:left;">
+			<label for="pseudo-random">Enter the number of pseudo-random numbers to generate:</label><br>
+			<input type="text" id="pseudo-random" name="pseudo-random" placeholder="7"><br><br>
+			
+			<label for="module">Enter the value of <strong>m</strong> (module):</label>
+			<input type="text" id="module" name="module" placeholder="100"><br><br>
+			
+			<label for="sequence">Enter the sequence of numbers:</label><br>
+			<textarea id="sequence" name="sequence" placeholder="65,89,98,3,69"></textarea>
+		</div>
+		<div style="float:left;">
+			<textarea id="result" name="result" disabled></textarea><br>
+			<button id="button_additive" type="button" onclick="initial(2)">Calculate values</button>
+			<button id="reset" type="button" onclick="resetCampus()">Reset</button>
+		</div>
+	</div>
+</body>
+
+
+</html>
